@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+* {
+    margin: 1%;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+:root {
+    --bg-color: #F2EDDF;
+    --second-bg-color: #26201C;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    color: var(--second-bg-color);
+}
+
+
+.header_menu_link {
+    color: var(--second-bg-color);
+}
+
+.main-miaudote{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}   
+
+.main-miaudote img{
+    max-width: 100%;
+    height: auto;
+}
+
+.cat-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -27px;
+}
+
+.cat-container img{
+    transition: transform 0.3s ease-in-out;
+}
+
+.cat-container img:hover {
+    transform: scale(1.1); 
+}
+
+.about-us {
+    width: 50%;
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #fff; 
+    border: 2px solid var(--second-bg-color); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    color: var(--second-bg-color); 
+}
+
+.about-us h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: var(--second-bg-color);
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.title {
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.image-galleryl {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+}
+
+.image-row img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-row img:hover {
+    transform: scale(1.1); 
+}
+
+.button-{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.button-adotar {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    text-align: center;
+    gap: 16px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--second-bg-color);
+    font-family: var(--second-bg-color);
+    border: 3px solid var(--second-bg-color);
+    width: 378px;
+}
+
+.button-adotar:hover{
+    background-color: #F2C1AE;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
