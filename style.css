@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
+@import url("cats.css");
+
 * {
-    margin: 1%;
-    padding: 0;
+    margin: 0.5px;
+    padding: 0.5px;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
@@ -16,6 +18,10 @@
     --second-bg-color: #26201C;
 }
 
+ol, ul {
+	list-style: none;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -25,9 +31,67 @@ body {
     color: var(--second-bg-color);
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+}
 
 .header_menu_link {
     color: var(--second-bg-color);
+    padding: 1.5em;
+}
+
+.menu_hamburguer{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.options {
+    display: none;
+}
+
+.options-item {
+    padding: 0 1em;
+    text-transform: uppercase;
+}
+
+.options-link {
+    text-decoration: none;
+    color: var(--second-bg-color);
+}
+
+.list-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container-button:checked~.list-menu{
+    display: block;
+}
+
+.container-button {
+    display: none;
+}
+
+.list-menu__link{
+    color: var(--bg-color);
+    text-transform: uppercase;
+}
+
+.list-menu list,
+.list-menu__item {
+    padding: 1em;
+    background-color: var(--second-bg-color)
+
 }
 
 .main-miaudote{
@@ -38,7 +102,7 @@ body {
 }   
 
 .main-miaudote img{
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -85,12 +149,6 @@ body {
     
 }
 
-.image-galleryl {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
-}
-
 .image-row {
     display: flex;
     justify-content: center;
@@ -113,23 +171,23 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 32px;
+    max-height: 20%;
 }
 
 .button-adotar {
     display: flex;
     justify-content: center;
-    width: 150px;
     text-align: center;
     gap: 16px;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
-    padding: 21.5px 0;
+    padding: 15px 0;
     text-decoration: none;
     color: var(--second-bg-color);
     font-family: var(--second-bg-color);
     border: 3px solid var(--second-bg-color);
-    width: 378px;
+    width: 200px;
 }
 
 .button-adotar:hover{

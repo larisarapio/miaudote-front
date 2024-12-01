@@ -8,26 +8,82 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header_menu">
-            <a class="miaudote">MIAUDOTE</a>
-            <a href="index.html" class="header_menu_link">Home</a>
-            <a href="about.html" class="header_menu_link">Sobre nós</a>
-        </nav>
+        <div class="header_menu">
+            <input type="checkbox" id="menu" class="container-button">
+            <label for="menu">
+                <img src="assents/menu.png" alt="" class="menu_hamburguer ">
+            </label>
+
+            <ul class="list-menu">
+                <li class="list-menu__item">
+                      <a href="index.html" class="list-menu__link">Home</a>
+                 </li>
+                 <li class="list-menu__item">
+                      <a href="about.html" class="list-menu__link">Quem somos</a>
+                 </li>
+                 <li class="list-menu__item">
+                    <a href="cats.html" class="list-menu__link">adoção</a>
+               </li>
+            </ul>
+            
+            <a class="header_menu_link">MIAUDOTE</a>
+        </div>
+
+        <div class="header_menu">
+            <img src="assents/user.png" alt="" class="menu_user">
+        </div>
     </header>
     <main>
         <div class="image-gallery">
+
             <div class="image-row">
-                <img src="./assents/cat1.png" alt="Imagem do mascote Laranjinha 1">
-                <img src="./assents/cat2.png" alt="Imagem do mascote Laranjinha 2">
+                <a href="#cat1">
+                    <img src="./assents/cat1.png" alt="Imagem do mascote Laranjinha 1">
+                </a>
+
+                <a href="#cat2">
+                    <img src="./assents/cat7.png" alt="Imagem do mascote Laranjinha 7">
+                </a>
+                
+            </div>
+
+            <div class="image-row">
                 <img src="./assents/cat3.png" alt="Imagem do mascote Laranjinha 3">
                 <img src="./assents/cat4.png" alt="Imagem do mascote Laranjinha 4">
+                
             </div>
+
             <div class="image-row">
                 <img src="./assents/cat5.png" alt="Imagem do mascote Laranjinha 5">
                 <img src="./assents/cat3.png" alt="Imagem do mascote Laranjinha 6">
+            </div>
+
+            <div class="image-row">
                 <img src="./assents/cat7.png" alt="Imagem do mascote Laranjinha 7">
                 <img src="./assents/cat1.png" alt="Imagem do mascote Laranjinha 8">
             </div>
+            
+
+            <div id="cat1" class="popup">
+                <div class="popup-content">
+                    <h2>Simba</h2>
+                    <p><strong>Idade:</strong> 5 anos</p>
+                    <p><strong>Raça:</strong> Maine Coon</p>
+                    <p><strong>No abrigo desde:</strong> 05/07/2024</p>
+                    <a href="#" class="close-btn">Quero adotar</a>
+                </div>
+            </div>
+
+            <div id="cat2" class="popup">
+                <div class="popup-content">
+                    <h2>Titião</h2>
+                    <p><strong>Idade:</strong> 8 anos</p>
+                    <p><strong>Raça:</strong> Não identificada </p>
+                    <p><strong>No abrigo desde:</strong> 11/07/2024</p>
+                    <a href="#" class="close-btn">Quero adotar</a>
+                </div>
+            </div>
+            
         </div>
     </main>
     <footer class="footer">
